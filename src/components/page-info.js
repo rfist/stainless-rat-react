@@ -14,7 +14,6 @@ class PageInfo extends Component {
     }
     componentWillReceiveProps(props) {
         this.props.fetchPage(props.match.params.pageId);
-
     }
     createElement(el, index) {
         const regex = RegExp(/\d*(?=\])/g);
